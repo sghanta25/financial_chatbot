@@ -1,1 +1,88 @@
+Building Financial Insights for a Chatbot
 
+In this exercise, we are going to manually gather financial data, analyze it using Python, and uncover important trends that would help in developing an AI-powered financial chatbot.
+
+Follow these simple steps carefully:
+
+Step 1: Data Extraction
+
+First, we will collect real financial data from official 10-K filings.
+
+Where to go:
+
+Visit the SEC's EDGAR database.
+Search for:
+Microsoft
+Tesla
+Apple
+What to extract for each company (for the last three fiscal years):
+
+Total Revenue
+Net Income
+Total Assets
+Total Liabilities
+Cash Flow from Operating Activities
+Organizing the data:
+
+Compile the extracted numbers neatly into an Excel spreadsheet.
+This will make it easier when we move to analysis.
+Step 2: Setting Up the Python Environment (Jupyter Notebook)
+
+Before we start analyzing, we need to prepare our environment.
+
+Install Jupyter Notebook (if you haven’t already):
+
+pip install notebook
+Launch Jupyter Notebook:
+
+jupyter notebook
+This will open Jupyter in your web browser.
+
+Create a New Notebook:
+
+Inside Jupyter, click "New" → "Python 3" to create a fresh notebook for this project.
+Step 3: Python Analysis Using Pandas
+
+We are now ready to dive into the data analysis part.
+
+Import pandas:
+
+At the top of your notebook, import the pandas library:
+
+import pandas as pd
+Load the data:
+
+Save your Excel file as a CSV file for easier handling.
+Load it into a DataFrame:
+df = pd.read_csv('path_to_your_csv_file.csv')
+Analyze year-over-year changes:
+
+Calculate the percentage growth for key metrics like this:
+
+df['Revenue Growth (%)'] = df.groupby(['Company'])['Total Revenue'].pct_change() * 100
+df['Net Income Growth (%)'] = df.groupby(['Company'])['Net Income'].pct_change() * 100
+Feel free to explore additional analyses like:
+
+Asset growth
+Liability changes
+Cash flow variations
+You can also group and compare companies to spot interesting patterns.
+
+Step 4: Summarize and Document Your Findings
+
+Throughout your Jupyter Notebook:
+
+Use Markdown cells to explain your thought process, observations, and conclusions.
+Summarize what you notice about each company — for example, how Tesla’s cash flow changed, or how Apple's revenue growth trend looks.
+Focus on turning raw numbers into meaningful insights.
+
+Final Outcome:
+
+By following this flow, you’ll build a clear and structured financial analysis — the kind of foundation that can feed into a smart financial chatbot.
+
+You'll also strengthen your skills in:
+
+Extracting real-world data
+Analyzing trends using pandas
+Communicating insights clearly and professionally
+Enjoy the process and explore different ways to make your analysis even richer!
