@@ -1,0 +1,69 @@
+Financial Chatbot Prototype
+
+Creating a fully functional AI chatbot for financial analysis is an exciting but complex task. For now, we'll start with a simplified version designed to introduce you to the basics.
+This exercise will help you build a prototype that responds to predefined financial questions — a great first step into the world of AI chatbots.
+
+Let's get started!
+
+Step 1: Preparation
+
+Review your analyzed data:
+Refresh your memory by quickly reviewing the financial data you analyzed earlier.
+Set up your environment:
+Make sure Python is installed along with basic libraries like:
+pandas for data handling
+(Optional) Flask if you want to try a simple web-based version later
+If needed, you can install Flask by running:
+
+pip install flask
+Step 2: Chatbot Design and Data Preparation
+
+Define predefined queries:
+Pick 3 to 5 common financial questions based on your data, such as:
+"What is the total revenue?"
+"How has net income changed over the last year?"
+"What are the total assets?"
+Prepare responses:
+For each question, prepare a clear and direct answer using the financial data you have analyzed.
+Example:
+
+
+User Query	Response
+"What is the total revenue?"	"The total revenue is $168 billion."
+"How has net income changed over the last year?"	"Net income increased by 10% compared to the previous year."
+Step 3: Basic Chatbot Development
+
+Build the chatbot logic:
+Create a simple Python function that matches user queries to your prepared answers using if-else statements.
+
+Example structure:
+
+def financial_chatbot(user_query):
+    if user_query == "What is the total revenue?":
+        return "The total revenue is $168 billion."
+    elif user_query == "How has net income changed over the last year?":
+        return "Net income increased by 10% compared to the previous year."
+    # Add more conditions for other queries
+    else:
+        return "Sorry, I can only answer predefined questions."
+Interacting with the chatbot:
+You can allow users to type questions by using the input() function:
+
+user_input = input("Ask a financial question: ")
+print(financial_chatbot(user_input))
+For those who want an extra challenge: you can also build a simple web app using Flask later!
+
+Step 4: Testing and Documentation
+
+Test your chatbot:
+Try asking the predefined questions and check if the chatbot returns the correct answers.
+Document your work:
+Write a short explanation (in a text file or notebook) covering:
+How the chatbot works
+The list of questions it can answer
+Any limitations (for example, it only understands exact predefined questions)
+Final Outcome:
+
+By the end of this activity, you will have a basic working chatbot that responds to financial queries — and a strong foundation for more advanced AI chatbot projects in the future.
+
+Explore, test, and have fun with it!
