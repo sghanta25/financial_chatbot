@@ -1,4 +1,4 @@
-# financial_chatbot
+![image](https://github.com/user-attachments/assets/a4ae0bc9-39b7-4da7-85a7-74a4594b7121)# financial_chatbot
 Financial Chatbot: Quick Guide
 
 **Objective:**
